@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Poor Man's Router</title>
+    <link rel="stylesheet" href="./poor-mans.css">
+  </head>
+  <body>
+    <main id="root">
+      <a id="home" href="home" class="routable" data-title="Home">Home</a>
+      <a id="about" href="about" class="routable" data-title="About">About</a>
+      <a id="blog" href="blog" class="routable" data-title="Blog">Blog</a>
+      <button id="shop" class="routable" data-title="Shop" data-href="shop">Shop</a>
+      <div id="application"></div>
+    </main>
+    <script src="./poor-mans-router.js"></script>
+    <script>
+      const options = {
+        // routableClass: '...',
+        // selectedClasses: ['...'],
+        // title: '...',
+        // titleSeparator: '...'
+      }
+      new PoorMansRouter(options);
+    </script>
+  </body>
+</html>
